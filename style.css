@@ -1,17 +1,159 @@
-/* CSS files add styling rules to your content */
-
 body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 2em;
-  }
-  
-  h1 {
-    font-style: italic;
-    color: #373fff;
-  }
-  
-  .store-container {
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 25px;
-  }
+  font-family: Arial;
+  background-color: #E0D8C8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+}
+
+h1 {
+  font-family: "Tropikal";
+  margin: 2rem;
+  font-size: 4rem;
+  color: #716D5F;
+}
+
+h2 {
+  font-family: "Tropikal";
+  color: #716D5F;
+  margin: 2rem;
+}
+
+.button-container {
+  display: flex;
+  margin: 2rem;
+}
+
+.filter-button {
+  width: 200px;
+  height: 65px;
+  border: 3px solid #716D5F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.045em;
+  color: #716D5F;
+}
+
+.filter-button.selected {
+  background: #CBC3B3;
+}
+
+.containers {
+  height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.containerc {
+  height: 10%;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+}
+
+.containera {
+  height: 10%;
+  position: absolute;
+  top: 140%;
+  left: 5%;
+}
+
+.containerr {
+  height: 10%;
+  position: absolute;
+  top: 180%;
+  left: 5%;
+}
+
+.containerb {
+  height: 10%;
+  position: absolute;
+  top: 220%;
+  left: 5%;
+}
+
+.containerl {
+  height: 10%;
+  position: absolute;
+  top: 260%;
+  left: 5%;
+}
+
+.containerva {
+  height: 10%;
+  position: absolute;
+  top: 300%;
+  left: 5%;
+
+}
+
+.containerbr {
+  height: 10%;
+  position: absolute;
+  top: 340%;
+  left: 5%;
+}
+
+.btn {
+  margin-top: calc(40% + 0px);
+  position: relative;
+  display: inline-block;
+  width: 277px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.045em;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke: #716D5F;
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+/*  for text inside button */
+.btn span {
+  background: rgb(255, 130, 130);
+  background: #716D5F;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+
+.huangpu {
+  border: 1px solid black;
+  background: #;
+  margin: 2rem;
+}

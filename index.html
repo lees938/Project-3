@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Week 9 - Airtable API</title>
+    <title>Shanghai Stores</title>
 
     <!-- add reset to create consistency between browsers and devices. -->
     <link rel="stylesheet" type="text/css" href="./reset.css" />
 
-    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:400,900" />
 
     <!-- add link to your javascript. be sure it includes "defer" -->
     <script type="text/javascript" src="./airtable.browser.js" defer></script>
@@ -17,9 +18,209 @@
   </head>
 
   <body>
-    <div class="container">
-      
-  
+    <h1>
+      Shanghai Stores
+    </h1>
+
+    <div class="button-container">
+      <a href="index.html" class="filter-button selected">
+        Type
+      </a>
+      <a href="list.html" class="filter-button">
+        All
+      </a>
+    </div>
+
+    <div class="containers">
+      <a href="vintage.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Vintage</span>
+      </a>
+    </div>
+
+    <div class="containerc">
+      <a href="cafe.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Cafe</span>
+      </a>
+    </div>
+
+    <div class="containera">
+      <a href="art.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Art</span>
+      </a>
+    </div>
+
+    <div class="containerr">
+      <a href="resto.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Restoraunt</span>
+      </a>
+    </div>
+
+    <div class="containerb">
+      <a href="bar.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Bar</span>
+      </a>
+    </div>
+
+    <div class="containerl">
+      <a href="lifestyle.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Lifestyle</span>
+      </a>
+    </div>
+
+    <div class="containerbr">
+      <a href="brand.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Brand</span>
+      </a>
+    </div>
+
+    <div class="containerva">
+      <a href="variety.html" class="btn">
+        <svg width="277" height="62">
+          <defs>
+            <lineargradient class="grad1">
+              <stop offset="0%" stop-color="#FF8282" />
+              <stop offset="100%" stop-color="#E178ED" />
+            </lineargradient>
+          </defs>
+          <rect
+            x="5"
+            y="5"
+            rx="25"
+            fill="none"
+            stroke="url(#grad1)"
+            width="266"
+            height="50"
+          ></rect>
+        </svg>
+        <!--<span>Voir mes réalisations</span>-->
+        <span>Variety</span>
+      </a>
     </div>
   </body>
 </html>

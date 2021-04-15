@@ -71,7 +71,13 @@ function consoleLogStores() {
       document.querySelector(".container").append(storeContainer);
 
       //adding 1rst column (category)
-      var storeCategory = document.createElement("h2");
+      var storeName = document.createElement("h2");
+      storeName.classList.add("name");
+      storeName.innerText = store.fields.name;
+      storeContainer.append(storeName);
+      
+      //adding 1rst column (category)
+      var storeCategory = document.createElement("h3");
       storeCategory.classList.add("category");
       storeCategory.innerText = store.fields.category;
       storeContainer.append(storeCategory);
@@ -91,11 +97,30 @@ function consoleLogStores() {
       // add event listener
       // when user clicks on cake container
       //img and description will appear or disappear
-      storeContainer.addEventListener("click", function(){
-        storeFrom.classList.toggle("active");
-        storePix.classList.toggle("active");
+      storeContainer.addEventListener("click", function() {
+      storeFrom.classList.toggle("active");
+      storePix.classList.toggle("active");
+      storeCategory.classList.toggle("active");
+      })
+      
+      //get genre field from airtable
+      //loop through array and add each genre as a class
+      //to song container
+      //genre can be word u want
+      var storeLocations = store.fields.from;
+      storeLocations.forEach(function(from) {
+      storeContainer.classList.add(from)
+      });
+
+      var filterCategory = document.querySelector('.category');
+      filterCategory.addEventListener("click", function() {
+
+        if(storeContainer.classList.contains("category")) {
+          storeContainer.style.background = "red";
+        } else {
+          storeContainer.style.background = "white";
+        }
       })
 
-    });
-  }
-  
+      });
+    }
